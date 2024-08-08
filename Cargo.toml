@@ -1,0 +1,16 @@
+[workspace]
+members = ["blog"]
+default-members = ["blog"]
+resolver = "2"
+
+[profile.release]
+codegen-units = 1
+opt-level = "z"
+panic = "abort"
+lto = true
+
+[profile.wasm-release]
+inherits = "release"
+opt-level = "z"
+lto = true
+codegen-units = 1

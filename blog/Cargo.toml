@@ -1,0 +1,16 @@
+[package]
+name = "blog"
+version = "0.0.0"
+authors = ["Han Damin <handamin0130@gmail.com>"]
+repository = "https://github.com/handamini/handamin.blog"
+edition = "2021"
+
+[dependencies]
+leptos = { version = "0.6.13", features = ["csr"] }
+leptos_meta = { version = "0.6.13", features = ["csr"] }
+leptos_router = { version = "0.6.13", features = ["csr"] }
+
+stylance = { version = "0.5.1" }
+
+console_log = "1"
+console_error_panic_hook = "0.1"
