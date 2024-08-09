@@ -22,11 +22,12 @@ pub fn App() -> impl IntoView {
             </div>
             <main>
                 <Routes>
-                    <Route path="" view=home::Page />
-                    <Route path="posts" view=posts::Page />
-                    <Route path="posts/:id" view=post::Page />
+                    <Route path="/" view=home::Page />
+                    <Route path="/posts" view=posts::Page />
+                    <Route path="/posts/:id" view=post::Page />
 
-                    <Route path="*" view=_not_found::Page />
+                    // Does not work on GitHub Pages
+                    <Route path="/*any" view=_not_found::Page />
                 </Routes>
             </main>
         </Router>

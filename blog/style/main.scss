@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+main {
+  margin: auto;
+  padding: 3em 1em;
+  max-width: 70ch;
+}
+
+.nav {
+  @apply flex flex-col space-y-1;
+
+  .nav-item {
+    @apply flex flex-row space-x-2;
+
+    &:hover {
+      .nav-description {
+        @apply opacity-100;
+      }
+    }
+  }
+
+  .nav-button {
+    @apply px-4 py-2 text-left text-xl transition-all duration-200 ease-in-out;
+
+    &:hover {
+      @apply px-5 font-extrabold;
+    }
+  }
+
+  .nav-description {
+    @apply p-2 opacity-0 transition-opacity duration-300 ease-in-out;
+
+    p {
+      @apply text-base;
+    }
+  }
+}
