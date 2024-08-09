@@ -15,6 +15,10 @@ main {
     @apply flex flex-row space-x-2;
 
     &:hover {
+      .nav-button {
+        @apply px-5 font-extrabold;
+      }
+
       .nav-description {
         @apply opacity-100;
       }
@@ -23,10 +27,6 @@ main {
 
   .nav-button {
     @apply px-4 py-2 text-left text-xl transition-all duration-200 ease-in-out;
-
-    &:hover {
-      @apply px-5 font-extrabold;
-    }
   }
 
   .nav-description {
